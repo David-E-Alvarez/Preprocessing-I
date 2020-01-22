@@ -130,7 +130,15 @@ table {
 * {
   box-sizing: border-box;
 }
+/* Less variables */
 html,
 body {
   height: 100%;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+header {
+  border: 2px solid red;
+}
+header div {
+  display: flex;
 }
