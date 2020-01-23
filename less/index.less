@@ -58,37 +58,68 @@ html, body {
 	height: 100%;
 	font-family: @font;
 }
-
-header{//beginning of header
-	/*border: 2px solid red;*/
-	margin-top: 30px;
-	div{//start of div
-		border: 2px purple solid;
-		display: flex;
-		justify-content: flex-end;
-	}//end of div
-	a{//start of a tag
-		border: red 2px solid;
-		margin-left: 50px;
-	}//end of a tag
-}//end of header
-
-.intro{
-	img{
-		width: 20%;
-		height: 20%;
+@media(max-width: 500px){
+	body{
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
 	}
-	.button{
-		border: 1px black solid;
-		width: 90px;
-		height: 20px;
-		border-radius: 5px;
+	.resumeContainer{
 		background-color: lightgrey;
 	}
-	div a{
-		text-decoration: none;
+}
+header{//beginning of header
+	/*border: 2px solid red;*/
+	div{//start of div
+		display: flex;
+		justify-content: center;
+	}//end of div
+}//end of header
+
+.border{//mixin 
+	border: 2px red solid;
+}
+
+.intro{
+	.image{
 		text-align: center;
-		color: black;
+	}
+	img{
+		width: 30vh;
+		height: 30vh;
+		.border();
 	}
 
+}
+
+.skills{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	div{
+		text-align: center;
+		width: 50%;
+		h3{
+			text-decoration: underline;
+		}
+	}
+}
+
+.work{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	div{
+		text-align: center;
+		width: 50%;
+		
+	}
+	table{
+		td, th{
+			border: 1.5px solid black;
+		}
+	}
+}
+footer{
+	text-align: center;
+	margin-top: 25px;
 }
