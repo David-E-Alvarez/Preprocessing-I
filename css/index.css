@@ -137,8 +137,31 @@ body {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 header {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+  margin-top: 30px;
 }
 header div {
+  border: 2px purple solid;
   display: flex;
+  justify-content: flex-end;
+}
+header a {
+  border: red 2px solid;
+  margin-left: 50px;
+}
+.intro img {
+  width: 20%;
+  height: 20%;
+}
+.intro .button {
+  border: 1px black solid;
+  width: 90px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+.intro div a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
 }
